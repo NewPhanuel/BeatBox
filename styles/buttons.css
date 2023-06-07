@@ -1,0 +1,48 @@
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.play {
+    display: inline-block;
+    max-width: 5rem;
+    background: none;
+    margin: 0 3rem;
+    font-size: 2rem;
+    border: none;
+    color: #343434;
+    margin-top: 1.3rem;
+    cursor: pointer;
+}
+
+.reset {
+    display: inline-block;
+    max-width: 5rem;
+    background: none;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    border: none;
+    color: #727272;
+    margin-top: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.stop {
+    display: inline-block;
+    max-width: 5rem;
+    background: none;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    border: none;
+    color: #727272;
+    margin-top: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reset:hover,
+.stop:hover {
+    color: #343434;
+    transition: 0.5s;
+}

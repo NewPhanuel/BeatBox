@@ -1,0 +1,73 @@
+.kick-pad,
+.snare-pad,
+.hihat-pad,
+.hihat-open-pad,
+.crash-pad,
+.tom-pad {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.kick,
+.snare,
+.hihat,
+.hihat-open,
+.crash,
+.tom {
+    display: flex;
+}
+
+.kick-pad {
+    background: rgb(178, 178, 255);
+}
+
+.snare-pad {
+    background: rgb(179, 239, 255);
+}
+
+.hihat-pad {
+    background: rgb(209, 174, 255);
+}
+
+.hihat-open-pad {
+    background: rgb(169, 255, 199);
+}
+
+.crash-pad {
+    background: rgb(255, 182, 232);
+}
+
+.tom-pad {
+    background: rgb(255, 214, 183);
+}
+
+.pad {
+    transition: all 0.5s ease;
+}
+
+.kick-pad.active {
+    background: rgb(70, 70, 255);
+}
+
+.snare-pad.active {
+    background: rgb(42, 199, 243);
+}
+
+.hihat-pad.active {
+    background: rgb(145, 61, 255);
+}
+
+.hihat-open-pad.active {
+    background: rgb(32, 233, 102);
+}
+
+.crash-pad.active {
+    background: rgb(255, 68, 196);
+}
+
+.tom-pad.active {
+    background: rgb(255, 149, 68);
+}

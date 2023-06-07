@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>BeatBox</title>
+    </head>
+    <body>
+        <div class="sequencer">
+            <div class="wrapper">
+                <div class="kick-track">
+                    <div class="controls">
+                        <h1>Kick</h1>
+                        <button
+                            data-track="0"
+                            class="mute kick-volume"
+                            title="Mute"
+                        >
+                            <i class="fa-solid fa-volume-xmark"></i>
+                        </button>
+                        <select name="kick-select" id="kick-select">
+                            <option value="./sounds\kick-1.wav">Kick 1</option>
+                            <option value="./sounds\kick-2.wav">Kick 2</option>
+                            <option value="./sounds\kick-3.wav">Kick 3</option>
+                            <option value="./sounds\kick-4.wav">Kick 4</option>
+                        </select>
+                    </div>
+                    <div class="kick">
+                        <div class="pad kick-pad b0"></div>
+                        <div class="pad kick-pad b1"></div>
+                        <div class="pad kick-pad b2"></div>
+                        <div class="pad kick-pad b3"></div>
+                        <div class="pad kick-pad b4"></div>
+                        <div class="pad kick-pad b5"></div>
+                        <div class="pad kick-pad b6"></div>
+                        <div class="pad kick-pad b7"></div>
+                    </div>
+                </div>
+                <div class="snare-track">
+                    <div class="controls">
+                        <h1>Snare</h1>
+                        <button
+                            data-track="1"
+                            class="mute snare-volume"
+                            title="Mute"
+                        >
+                            <i class="fa-solid fa-volume-xmark"></i>
+                        </button>
+                        <select name="snare-select" id="snare-select">
+                            <option value="./sounds\snare-1.wav">
+                                Snare 1
+                            </option>
+                            <option value="./sounds\snare-2.wav">
+                                Snare 2
+                            </option>
+                            <option value="./sounds\snare-3.wav">
+                                Snare 3
+                            </option>
+                            <option value="./sounds\snare-4.mp3">
+                                Snare 4
+                            </option>
+                            <option value="./sounds\snare-5.mp3">
+                                Snare 5
+                            </option>
+                            <option value="./sounds\snare-6.mp3">
+                                Snare 6
+                            </option>
+                            <option value="./sounds\snare-7.mp3">
+                                Snare 7
+                            </option>
+                        </select>
+                    </div>
+                    <div class="snare">
+                        <div class="pad snare-pad b0"></div>
+                        <div class="pad snare-pad b1"></div>
+                        <div class="pad snare-pad b2"></div>
+                        <div class="pad snare-pad b3"></div>
+                        <div class="pad snare-pad b4"></div>
+                        <div class="pad snare-pad b5"></div>
+                        <div class="pad snare-pad b6"></div>
+                        <div class="pad snare-pad b7"></div>
+                    </div>
+                </div>
+                <div class="hihat-track">
+                    <div class="controls">
+                        <h1>Hi-Hat</h1>
+                        <button
+                            data-track="0"
+                            class="mute hihat-volume"
+                            title="Mute"
+                        >
+                            <i class="fa-solid fa-volume-xmark"></i>
+                        </button>
+                        <select name="hihat-select" id="hihat-select">
+                            <option value="./sounds\hit-hat-1.mp3">
+                                Hi-Hat 1
+                            </option>
+                            <option value="./sounds\hit-hat-2.mp3">
+                                Hi-Hat 2
+                            </option>
+                            <option value="./sounds\hit-hat-3.mp3">
+                                Hi-Hat 3
+                            </option>
+                            <option value="./sounds\hit-hat-4.mp3">
+                                Hi-Hat 4
+                            </option>
+                            <option value="./sounds\hit-hat-5.mp3">
+                                Hi-Hat 5
+                            </option>
+                        </select>
+                    </div>
+                    <div class="hihat">
+                        <div class="pad hihat-pad b0"></div>
+                        <div class="pad hihat-pad b1"></div>
+                        <div class="pad hihat-pad b2"></div>
+                        <div class="pad hihat-pad b3"></div>
+                        <div class="pad hihat-pad b4"></div>
+                        <div class="pad hihat-pad b5"></div>
+                        <div class="pad hihat-pad b6"></div>
+                        <div class="pad hihat-pad b7"></div>
+                    </div>
+                </div>
+                <div class="hihat-open-track">
+                    <div class="controls">
+                        <h1>Hi-Hat Open</h1>
+                        <button
+                            data-track="0"
+                            class="mute hihat-open-volume"
+                            title="Mute"
+                        >
+                            <i class="fa-solid fa-volume-xmark"></i>
+                        </button>
+                        <select name="hihat-open-select" id="hihat-open-select">
+                            <option value="./sounds\hit-hat-open-1.mp3">
+                                Hi-Hat Open 1
+                            </option>
+                            <option value="./sounds\hit-hat-open-2.mp3">
+                                Hi-Hat Open 2
+                            </option>
+                            <option value="./sounds\hit-hat-open-3.mp3">
+                                Hi-Hat Open 3
+                            </option>
+                            <option value="./sounds\hit-hat-open-4.mp3">
+                                Hi-Hat Open 4
+                            </option>
+                        </select>
+                    </div>
+                    <div class="hihat-open">
+                        <div class="pad hihat-open-pad b0"></div>
+                        <div class="pad hihat-open-pad b1"></div>
+                        <div class="pad hihat-open-pad b2"></div>
+                        <div class="pad hihat-open-pad b3"></div>
+                        <div class="pad hihat-open-pad b4"></div>
+                        <div class="pad hihat-open-pad b5"></div>
+                        <div class="pad hihat-open-pad b6"></div>
+                        <div class="pad hihat-open-pad b7"></div>
+                    </div>
+                </div>
+                <div class="crash-track">
+                    <div class="controls">
+                        <h1>Crash</h1>
+                        <button
+                            data-track="0"
+                            class="mute crash-volume"
+                            title="Mute"
+                        >
+                            <i class="fa-solid fa-volume-xmark"></i>
+                        </button>
+                        <select name="crash-select" id="crash-select">
+                            <option value="./sounds\crash-1.mp3">Crash</option>
+                        </select>
+                    </div>
+                    <div class="crash">
+                        <div class="pad crash-pad b0"></div>
+                        <div class="pad crash-pad b1"></div>
+                        <div class="pad crash-pad b2"></div>
+                        <div class="pad crash-pad b3"></div>
+                        <div class="pad crash-pad b4"></div>
+                        <div class="pad crash-pad b5"></div>
+                        <div class="pad crash-pad b6"></div>
+                        <div class="pad crash-pad b7"></div>
+                    </div>
+                </div>
+                <div class="tom-track">
+                    <div class="controls">
+                        <h1>Tom</h1>
+                        <button
+                            data-track="0"
+                            class="mute tom-volume"
+                            title="Mute"
+                        >
+                            <i class="fa-solid fa-volume-xmark"></i>
+                        </button>
+                        <select name="tom-select" id="tom-select">
+                            <option value="./sounds\tom-1.mp3">Tom</option>
+                        </select>
+                    </div>
+                    <div class="tom">
+                        <div class="pad tom-pad b0"></div>
+                        <div class="pad tom-pad b1"></div>
+                        <div class="pad tom-pad b2"></div>
+                        <div class="pad tom-pad b3"></div>
+                        <div class="pad tom-pad b4"></div>
+                        <div class="pad tom-pad b5"></div>
+                        <div class="pad tom-pad b6"></div>
+                        <div class="pad tom-pad b7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="reset" title="Reset pads">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </button>
+                <button class="play" title="Play">
+                    <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button class="stop" title="Stop">
+                    <i class="fa-regular fa-circle-stop"></i>
+                </button>
+            </div>
+            <div class="tempo">
+                <input
+                    type="range"
+                    name="tempo"
+                    class="tempo-slider"
+                    min="20"
+                    max="500"
+                    value="150"
+                />
+                <p class="tempo-number">Tempo: <span>150</span>bpm</p>
+            </div>
+            <span class="courtesy">powered by jamphan</span>
+            <audio src="./sounds/kick-1.wav" class="kick-sound"></audio>
+            <audio src="./sounds/snare-1.wav" class="snare-sound"></audio>
+            <audio src="./sounds/hit-hat-1.mp3" class="hihat-sound"></audio>
+            <audio
+                src="./sounds/hit-hat-open-1.mp3"
+                class="hihat-open-sound"
+            ></audio>
+            <audio src="./sounds/crash-1.mp3" class="crash-sound"></audio>
+            <audio src="./sounds/tom-1.mp3" class="tom-sound"></audio>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+            integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./scripts/app.js"></script>
+    </body>
+</html>
