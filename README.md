@@ -1,2 +1,2 @@
-# BeatMaker
-It makes beat
+# BeatBox
+Play some beat
